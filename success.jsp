@@ -13,7 +13,6 @@
   
 username : <s:property value="#session.username"/><br/>  
 password  : <s:property value="#session.login"/><br/>  
-result  : <s:property value="#session.result"/><br/>  
 <br />
 <br />
 

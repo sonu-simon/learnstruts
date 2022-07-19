@@ -4,13 +4,17 @@
 
 <struts>
     <package name="default" extends="struts-default">
-        <action name="loginHere" class="learn.LoginForm">
+        <action name="login" class="learn.LoginForm">
             <result name="success">/success.jsp</result>
             <result name="fail">/fail.jsp</result>
         </action>
 
         <action name="logout" class="learn.Logout">
             <result name="success">/login.jsp</result>
+        </action>
+
+        <action name="signup" class="learn.Signup">
+            <result name="login">/login.jsp</result>
         </action>
     </package>
 </struts>

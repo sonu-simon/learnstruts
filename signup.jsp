@@ -14,14 +14,13 @@
     }
 %>
 <center>
-<h1> Login </h1>
+<h1> Signup </h1>
 
-<s:form action="login">  
+<s:form action="signup">  
 <s:textfield name="username" label="username "></s:textfield>  
-<s:textfield name="password" label="password " type="password"></s:textfield> 
-<s:submit value="login"></s:submit>  
+<s:textfield name="password" label="password "></s:textfield> 
+<s:submit value="signup"></s:submit>  
 </s:form>    
-<a href="signup.jsp">Sign up</a>
 
 </center>
 
