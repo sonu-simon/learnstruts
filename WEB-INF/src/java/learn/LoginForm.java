@@ -11,7 +11,7 @@ public class LoginForm implements SessionAware{
     private SessionMap<String,Object> sessionMap;  
     @Override  
     public void setSession(Map<String, Object> map) {  
-        sessionMap=(SessionMap)map;  
+        sessionMap = (SessionMap<String, Object>) map;  
     }  
 
     public String getUsername() {

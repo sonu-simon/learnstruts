@@ -20,7 +20,10 @@ public class DatabaseAccess {
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO users VALUES (?,?)");
         preparedStatement.setString(1, username);
         preparedStatement.setString(2, password);
-        int result = preparedStatement.executeUpdate();
+        int result = 0;
+        if(username != null && password != null){
+            result = preparedStatement.executeUpdate();
+        }
         connection.close();  
 
         return result;
